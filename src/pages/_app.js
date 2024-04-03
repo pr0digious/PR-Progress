@@ -8,35 +8,5 @@ import Home from "./index"
 
 
 export default function App({ Component, pageProps }) {
-	const [currentPage, setCurrentPage] = useState("Home");
-
-	const handlePageChange = (page) => {
-		setCurrentPage(page);
-	};
-
-	switch(currentPage) 
-	{
-		case "/":
-			Component = <Home/>
-			break;
-
-		case "/Profile":
-			Component = <Profile/>
-			break;
-
-		case "/StartWorkout":
-			Component = <StartWorkout/>
-			break;
-
-		case "/Exercises":
-			Component = <Exercises/>
-			break;
-	}
-
-	return (
-	<>
-		<Navbar onPageChange={handlePageChange}/>
-		{Component}
-	</>
-	)
+	return <Component {..pageProps} />
 }
