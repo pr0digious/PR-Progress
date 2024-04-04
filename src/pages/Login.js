@@ -10,15 +10,15 @@ export default function Login() {
                                             <label for="f-email">
                                                     Enter Your Email Address:
                                             </label>
-                                            <input type="text" name="f-email" className="rounded-2xl text-center"/>
+                                            <input type="text" name="email" className="rounded-2xl text-center"/>
                                     </div>
                                     <div className="flex flex-row space-x-2">
                                             <label for="f-password">
                                                     Create a Password:
                                             </label>
-                                            <input type="text" name="f-password" className="rounded-2xl text-center"/>
+                                            <input type="password" name="password" className="rounded-2xl text-center"/>
                                     </div>
-                                    <button className="bg-white rounded-2xl p-3">
+                                    <button type="submit" className="bg-white rounded-2xl p-3">
                                             Sign In
                                     </button>
                             </div>
